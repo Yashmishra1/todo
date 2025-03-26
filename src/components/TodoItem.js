@@ -35,9 +35,7 @@ const TodoItem = ({item}) => {
         </View>
         <View style={styles.iconContainer}>
           <TouchableOpacity
-            onPress={() => {
-              setVisible(true);
-            }}>
+            onPress={onUpdate}>
             <Image
               style={styles.icon}
               source={require('../assets/images/edit.png')}
